@@ -285,3 +285,7 @@ body{
 #carouselExampleControls2{
   color: red;
 }
+th, td {
+  color: #ffffff;
+  font-weight: bold;
+}
