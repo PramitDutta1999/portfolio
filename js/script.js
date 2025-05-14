@@ -4,7 +4,7 @@ $(window).on("load",function() {
   });
 
   $(".items").isotope({
-    filter:"*",
+    filter:".rp",
     animation: {
       duration: 1500,
       easing: 'linear',
@@ -21,7 +21,7 @@ $(document).ready(function(){
     pagination: false,
   });
   var typed = new Typed(".typed", {
-    strings: ["An Engineer.", "Web Developer.","A Machine Learning Enthusiast.", "A Student."],
+    strings: ["An Engineer.", "A Researcher.","A Machine Learning Enthusiast.", "A Lifelong Student."],
     typeSpeed: 70,
     loop: true,
     startDelay: 1000,
@@ -70,12 +70,13 @@ $(document).ready(function(){
 
     $(".items").isotope({
       filter: selector,
-      animation: {
+      animationOptions: {
         duration: 1500,
         easing: 'linear',
         queue: false
       }
     });
+
     return false;
   });
 
